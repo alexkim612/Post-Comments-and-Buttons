@@ -10,4 +10,9 @@ app.use(express.json());
 // app.get('/', (req, res) => res.send('Hello World!'))
 app.use(express.static(path.join(__dirname, '../public')));
 app.get('/songs', Controller.handleGetSongs);
+
+app.get('/bundle.js', (req, res) => {
+  res.sendFile(path.join(__dirname, '../public/bundle.js'));
+});
+
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))
