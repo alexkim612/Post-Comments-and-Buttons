@@ -5,11 +5,13 @@
   "main": "webpack.config.js",
   "scripts": {
     "react-dev": "webpack -d --watch",
-    "start": "nodemon server/index.js",
+    "start": "node server/index.js",
+    "startNodemon": "nodemon server/index.js",
     "test": "jest",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage --colors",
-    "seed": "node ./database/seed.js"
+    "seed": "node ./database/seed.js",
+    "start-and-seed": "npm start & npm run seed"
   },
   "author": "",
   "license": "ISC",
