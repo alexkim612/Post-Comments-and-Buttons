@@ -1,6 +1,6 @@
 var mysql = require('mysql');
 var connection = mysql.createConnection({
-    host    : 'database',
+    host    : '3306',
     user    : 'root',
     password: 'root',
     database: 'soundcloud'
